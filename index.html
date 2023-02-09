@@ -13,10 +13,10 @@
         return !executedRegex ? null : executedRegex[1];
       }
 
-      var id = "id";
+      var queryParamName = "external_session_id";
 
       return {
-        externalId: extractQueryParamValueFromString(id, window.location.href)
+        sessionId: extractQueryParamValueFromString(queryParamName, window.location.href)
       };
     };
   </script>
